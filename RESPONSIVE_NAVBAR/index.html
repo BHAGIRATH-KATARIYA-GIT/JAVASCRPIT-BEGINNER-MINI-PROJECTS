@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            min-height: 100vh;
+            background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav{
+            background-color: white;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+        }
+        nav ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav a{
+            height: 100%;
+            padding: 0 30px;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a:hover{
+            background-color: #f0f0f0;
+        }
+
+        nav li:first-child{
+            margin-right: auto;
+        }
+
+        .side-bar{
+            position: fixed;
+            top : 0;
+            right: 0;
+            height: 100%;
+            width: 250px;
+            z-index: 999 ;
+            background-color: #ffffff76;
+            backdrop-filter: blur(10px);
+            box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        .side-bar li{
+            width: 100%;
+            margin: 6px;
+            margin-top: 20px;
+        }
+        .side-bar a{
+            width: 100%;
+        }
+        
+        @media(max-width : 700px){
+            .hideonmobile{
+                display: none;
+            }
+        }
+
+        @media(min-width : 700px){
+            .hideondekstop{
+                display: none;
+            }
+        }
+        @media(max-width : 500px){
+            .side-bar{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="side-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Cources</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">SingIn</a></li>
+            <li id="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+            
+        </ul>
+        <ul>
+            <li><a href="#">CodingGo</a></li>
+            <li class="hideonmobile"><a href="#">Home</a></li>
+            <li class="hideonmobile"><a href="#">Blog</a></li>
+            <li class="hideonmobile"><a href="#">Cources</a></li>
+            <li class="hideonmobile"><a href="#">About</a></li>
+            <li class="hideonmobile"><a href="#">SingIn</a></li>
+            <li id="menu" class="hideondekstop"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+
+        
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

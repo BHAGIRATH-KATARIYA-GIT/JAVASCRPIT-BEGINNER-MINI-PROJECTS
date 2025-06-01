@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a2a43;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff6a00, #ee0979);
+      color: transparent;
+      -webkit-background-clip: text;
+      text-shadow: 0 0 60px rgba(0, 17, 255, 0.473);
+      animation: anime 1s infinite alternate;
+
+
+}
+
+@keyframes anime {
+  100%{
+      text-shadow: 1px 1px 60px rgba(25, 53, 145, 0.675);
+
+  }
+  50%{
+      text-shadow: 1px 1px 60px rgba(240, 20, 20, 0.675);
+
+  }
+  
+}
+
+
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.input-group input {
+  height: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 300px;
+  outline: none;
+}
+
+.input-group button {
+  padding: 10px;
+  height: 40.5px;
+  border: none;
+  border: 2px solid rgba(0, 0, 0, 0.403);
+  background-color: #20c997;
+  width: 50px;
+  cursor: pointer;
+}
+
+
+#generate-btn {
+  background-color: #20c997;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background-color: #17a589;
+}

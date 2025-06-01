@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Changer</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #212121;
+            color: #fff;
+        }
+        #canvas{
+            margin: 100px auto 100px;
+            width: 80%;
+            text-align: center;
+        }
+        span{
+            display: block;
+        }
+        .button{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            display: inline-block;
+        }
+        #grey {
+            background: grey;
+        }
+        #aqua {
+            background: aqua;
+        }
+        #blue {
+            background: blue;
+        }
+        #yellow {
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<div id="canvas">
+    <h1>Color Scheme Changer</h1>
+    <span class="button" id="grey" ></span>
+    <span class="button" id="aqua"></span>
+    <span class="button" id="blue"></span>
+    <span class="button" id="yellow"></span>
+    <h3>Try to clicking</h3>
+</div>
+    <script src="theme.js"></script>
+</body>
+</html>

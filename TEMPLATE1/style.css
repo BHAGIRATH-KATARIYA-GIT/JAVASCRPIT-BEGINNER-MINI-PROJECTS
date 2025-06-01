@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #794dff;
+    
+}
+
+#logo img{
+    height: 7vh;
+    width: 10vw;
+    margin-right: 38vh;
+    margin-top: 4px;
+}
+.div1{
+    width: 85vw;
+    height: 10vh;
+    border: 2px solid white;
+    margin-left: 6.5vw;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    font-size: 1.3rem;
+    color: #d9d9d9;
+}
+#contactUs{
+    margin-right: 4%;  
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    width: 100vw;
+    margin-top: 50px;
+}
+.div2{
+    height: 25vh;
+    width: 50vw;
+    margin-left: 10vw;
+}
+.div3{
+    height: 10vh;
+    width: 30vw;
+    margin-left: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.div4 img{
+    height: 55vh;
+    width: 30vw;
+}
+#joinFree{
+    height: 50px;
+    width: 10vw;
+    border: 2px solid #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #d9d9d9;
+    padding-top: 4px;
+}
+#exploreMore{
+    height: 50px;
+    width: 14vw;
+    border: 2px solid #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #d9d9d9;
+    padding-top: 4px;
+}
+#exploreMore:hover{
+    background-color: #ffffff;
+    color: #0d0a15;
+    cursor: pointer;
+}
+#joinFree:hover{
+    background-color: #ffffff;
+    color: #0d0a15;
+    cursor: pointer;
+}
+#start h3{
+    font-size: 3.3rem;
+    color: #ffffff;
+}
+#start p{
+    padding-top: 50px;
+    font-size: 1.5rem;
+    color: #d9d9d9;
+}
+#home:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+#service:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+#pricing:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+#aboutUs:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+#contactUs:hover{
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+#start h3{
+    display: inline-block;
+    width:  100px;
+    border-right : 3px solid black;
+    border-right: 4px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(22) infinite, 
+    cursor .4s step-end infinite ;
+}
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+
