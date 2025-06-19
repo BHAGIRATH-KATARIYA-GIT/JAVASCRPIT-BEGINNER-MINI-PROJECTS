@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display" id="display" onclick="handleNumber(event)">0</div>
+      <div class="buttons">
+        <button class="clear" id="clear-all" onclick="handleClearAll(event)">
+          C
+        </button>
+        <button class="clear" id="clear-one" onclick="handleClearOne(event)">
+          ⌫
+        </button>
+        <button class="operator" onclick="handleNumber(event)">/</button>
+        <button class="operator" onclick="handleNumber(event)">*</button>
+
+        <button onclick="handleNumber(event)">7</button>
+        <button onclick="handleNumber(event)">8</button>
+        <button onclick="handleNumber(event)">9</button>
+        <button class="operator" onclick="handleNumber(event)">-</button>
+
+        <button onclick="handleNumber(event)">4</button>
+        <button onclick="handleNumber(event)">5</button>
+        <button onclick="handleNumber(event)">6</button>
+        <button class="operator" onclick="handleNumber(event)">+</button>
+
+        <button onclick="handleNumber(event)">1</button>
+        <button onclick="handleNumber(event)">2</button>
+        <button onclick="handleNumber(event)">3</button>
+        <button class="equals" onclick="handleAnswer(event)">=</button>
+
+        <button class="zero" onclick="handleNumber(event)">0</button>
+        <button id="point" onclick="handleNumber(event)">.</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
